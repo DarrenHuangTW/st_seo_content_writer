@@ -1,4 +1,4 @@
-# Prompts
+# Prompt
 from functions import interact_with_ai
 
 # Analyze the content from top-ranking pages.

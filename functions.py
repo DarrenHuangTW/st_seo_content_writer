@@ -150,7 +150,11 @@ def fetch_content(url, jina_api_key):
 # --- Step 5-10: AI Model Interactions ---  
 def interact_with_ai(messages, client, model=config["openai_model"], temperature=config["openai_temperature"]):
     try:
-        response = client.chat.completions.create(model=model, messages=messages, temperature=temperature)
+        response = client.chat.completions.create(
+            model=model, 
+            messages=messages, 
+            temperature=temperature,
+            )
         result = response.choices[0].message.content
         return result
     except Exception as e:
