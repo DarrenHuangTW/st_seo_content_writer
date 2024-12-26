@@ -1,5 +1,5 @@
 # Prompt
-from functions import interact_with_ai
+from archived.functions import interact_with_ai
 
 # Analyze the content from top-ranking pages.
 def generate_content_analysis(topic_query, df_results, client):

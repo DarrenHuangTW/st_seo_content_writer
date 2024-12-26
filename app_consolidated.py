@@ -9,6 +9,7 @@ import logging
 from config import config
 import aisuite as ai
 import time
+import os
 
 # --- FUNCTIONS.PY ---
 def handle_api_errors(response, api_name):
@@ -422,6 +423,8 @@ def main():
     # Get configuration from sidebar
     api_keys, model, database = sidebar_config()
 
+    st.write(api_keys['OPENAI_API_KEY'])
+
     # Update config
     config["openai_model"] = model
     config["semrush_database"] = database
@@ -429,6 +432,8 @@ def main():
     
     for key, value in api_keys.items():
         st.session_state[key] = value
+    
+    os.environ['OPENAI_API_KEY'] = st.session_state.OPENAI_API_KEY
 
     
     # Step 1: Topic Selection
@@ -457,7 +462,7 @@ def main():
                         st.dataframe(st.session_state.df_serp)
             
         # Step 3: SEMrush Data && Step 4: Content Retrieval
-            st.session_state.df_results = st.session_state.df_serp.copy().iloc[:2]
+            st.session_state.df_results = st.session_state.df_serp.copy().iloc[:3]
             
             with st.spinner("Fetching SEMRush Data..."):
                 time.sleep(1.5)
@@ -468,7 +473,7 @@ def main():
             
             contents = []
             for idx, link in enumerate(st.session_state.df_results['Link']):
-                with st.spinner(f"Fetching content from link {idx + 1}/2: {link}"):
+                with st.spinner(f"Fetching content from link {idx + 1}/{len(st.session_state.df_results['Link'])}: {link}"):
                     contents.append(fetch_content(link, st.session_state.JINA_API_KEY))
             st.session_state.df_results['Content'] = contents
             

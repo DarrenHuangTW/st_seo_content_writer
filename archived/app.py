@@ -1,12 +1,12 @@
 # for streamlit code
 import streamlit as st
 from config import config
-from functions import (
+from archived.functions import (
     get_serpapi_data,
     process_semrush_data,
     fetch_content,
 )
-from content_generation import (
+from archived.content_generation import (
     generate_content_analysis,
     generate_content_plan,
     generate_content_draft,
