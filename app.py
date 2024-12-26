@@ -66,7 +66,7 @@ def main():
     config["openai_model"] = model
     config["semrush_database"] = database
 
-
+    
     for key, value in api_keys.items():
         st.session_state[key] = value
 
