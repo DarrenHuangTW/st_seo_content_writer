@@ -357,8 +357,8 @@ def generate_final_deliverable(proofread_draft, seo_recommendations, targeting_k
 
         ## Keywords Analysis
         * List the primary keywords targeted in the content.
-            * Only show up to 15 keywords, prioritized by Frequency first then Search Volume.
-            * Use a Markdown table to present the keywords, search volume, and frequency.
+            * Use a Markdown table to present 3 columns - keywords, search volume, and frequency.
+            * Show up to 15 keywords, sorted descendingly by Frequency then Search Volume.
 
         ## Competitors
         * Summarize key information about the top competitors.
