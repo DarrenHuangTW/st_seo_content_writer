@@ -418,7 +418,7 @@ def sidebar_config():
 #     st.session_state.JINA_API_KEY = st.secrets['JINA_API_KEY']
 
 def main():
-    st.title("Content Generation Assistant")
+    st.title("Overdose Content Research & Generation Agent")
     
     # Get configuration from sidebar
     api_keys, model, database = sidebar_config()
@@ -460,7 +460,7 @@ def main():
                         st.dataframe(st.session_state.df_serp)
             
         # Step 3: SEMrush Data && Step 4: Content Retrieval
-            st.session_state.df_results = st.session_state.df_serp.copy().iloc[:3]
+            st.session_state.df_results = st.session_state.df_serp.copy()
             
             with st.spinner("Fetching SEMRush Data..."):
                 time.sleep(1.5)
@@ -524,7 +524,10 @@ def main():
                     proofread_draft, seo_recommendations, st.session_state.targeting_keywords, 
                     st.session_state.df_serp, content_analysis, client
                 )
+                
                 st.subheader("🎯 Final Deliverable")
+                st.caption("Try copy/paste into https://markdownlivepreview.com/ if the output is not formatted properly.")
+                st.divider()
                 st.markdown(final_deliverable)
 
 if __name__ == "__main__":
