@@ -5,7 +5,6 @@ from functions import (
     get_serpapi_data,
     process_semrush_data,
     fetch_content,
-    interact_with_ai
 )
 from content_generation import (
     generate_content_analysis,
@@ -15,24 +14,62 @@ from content_generation import (
     generate_seo_recommendations,
     generate_final_deliverable
 )
-import os
 import aisuite as ai
 import time
 
 # --- Initialization ---
 client = ai.Client()
 
-def load_api_keys():
-    st.session_state.SEMRUSH_API_KEY = st.secrets['SEMRUSH_API_KEY']
-    st.session_state.SERPAPI_KEY = st.secrets['SERPAPI_KEY']
-    st.session_state.OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
-    st.session_state.JINA_API_KEY = st.secrets['JINA_API_KEY']
+def sidebar_config():
+    st.sidebar.title("Configuration")
+    
+    # API Keys Section
+    st.sidebar.header("API Keys")
+    api_keys = {
+        'SERPAPI_KEY': st.sidebar.text_input("SerpAPI Key", type="password"),
+        'SEMRUSH_API_KEY': st.sidebar.text_input("SEMrush API Key", type="password"),
+        'OPENAI_API_KEY': st.sidebar.text_input("OpenAI API Key", type="password"),
+        'JINA_API_KEY': st.sidebar.text_input("Jina API Key", type="password")
+    }
+    
+    # Model Selection
+    st.sidebar.header("Model Settings")
+    model = st.sidebar.selectbox(
+        "Select OpenAI Model",
+        options=["openai:gpt-4o-mini", "openai:gpt-4o"],
+        index=0
+    )
+    
+    # Database Selection
+    st.sidebar.header("SEMrush Settings")
+    database = st.sidebar.selectbox(
+        "Select SEMrush Database",
+        options=["us", "au", "nz"],
+        index=0
+    )
+    
+    return api_keys, model, database
+
+# def load_api_keys():
+#     st.session_state.SEMRUSH_API_KEY = st.secrets['SEMRUSH_API_KEY']
+#     st.session_state.SERPAPI_KEY = st.secrets['SERPAPI_KEY']
+#     st.session_state.OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
+#     st.session_state.JINA_API_KEY = st.secrets['JINA_API_KEY']
 
 def main():
     st.title("Content Generation Assistant")
     
-    # Initialize API keys
-    load_api_keys()
+    # Get configuration from sidebar
+    api_keys, model, database = sidebar_config()
+
+    # Update config
+    config["openai_model"] = model
+    config["semrush_database"] = database
+
+
+    for key, value in api_keys.items():
+        st.session_state[key] = value
+
     
     # Step 1: Topic Selection
     topic_query = st.text_input("Enter the topic you want to write about:")
@@ -50,6 +87,7 @@ def main():
             
         # Only fetch new data if topic has changed
         if topic_query != st.session_state.current_topic:
+
             # Step 2: SERP Data
             with st.spinner("Fetching live SERP Data..."):
                 time.sleep(1.5)
@@ -110,7 +148,7 @@ def main():
             
             with st.spinner("Editorial review..."):
                 proofread_draft = proofread_content(content_draft, content_plan, content_analysis, client)
-                with st.expander("📝 Proofread Draft"):
+                with st.expander("📝 Refined Article"):
                     st.write(proofread_draft)
             
             with st.spinner("Generating SEO recommendations..."):

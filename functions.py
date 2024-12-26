@@ -40,7 +40,9 @@ def get_serpapi_data(topic_query, SERPAPI_KEY):
         logging.info("Successfully retrieved SerpAPI data.")
         return df_serp
     else:
-        return pd.DataFrame()
+        error_message = response.json().get('error', 'Unknown error occurred')
+        logging.error(f"Error retrieving SerpAPI data: {error_message}")
+        return error_message
 
 # --- Step 3: SEMRush Data Retrieval and Processing ---
 def get_semrush_data(url, api_key):
@@ -119,7 +121,6 @@ def process_semrush_data(df, api_key):
 
 # --- Step 4: Content Fetching ---
 def fetch_content(url, jina_api_key):
-    print(f"working on: {url}")
     headers = {
         'Authorization': f'Bearer {jina_api_key}',
         'X-Retain-Images': 'none',
