@@ -423,8 +423,6 @@ def main():
     # Get configuration from sidebar
     api_keys, model, database = sidebar_config()
 
-    st.write(api_keys['OPENAI_API_KEY'])
-
     # Update config
     config["openai_model"] = model
     config["semrush_database"] = database
@@ -499,27 +497,27 @@ def main():
             with st.spinner("Analyzing content..."):
                 content_analysis = generate_content_analysis(topic_query, st.session_state.df_results, client)
                 with st.expander("🧐 Content Analysis"):
-                    st.write(content_analysis)
+                    st.markdown(content_analysis)
             
             with st.spinner("Creating content plan..."):
                 content_plan = generate_content_plan(topic_query, st.session_state.targeting_keywords, content_analysis, client)
                 with st.expander("🗂️ Content Plan"):
-                    st.write(content_plan)
+                    st.markdown(content_plan)
             
             with st.spinner("Writing draft..."):
                 content_draft = generate_content_draft(content_plan, content_analysis, client)
                 with st.expander("✍️ Content Draft"):
-                    st.write(content_draft)
+                    st.markdown(content_draft)
             
             with st.spinner("Editorial review..."):
                 proofread_draft = proofread_content(content_draft, content_plan, content_analysis, client)
                 with st.expander("📝 Refined Article"):
-                    st.write(proofread_draft)
+                    st.markdown(proofread_draft)
             
             with st.spinner("Generating SEO recommendations..."):
                 seo_recommendations = generate_seo_recommendations(proofread_draft, st.session_state.targeting_keywords, client)
                 with st.expander("🤖 SEO Recommendations"):
-                    st.write(seo_recommendations)
+                    st.markdown(seo_recommendations)
             
             with st.spinner("Preparing final deliverable..."):
                 final_deliverable = generate_final_deliverable(
@@ -527,7 +525,7 @@ def main():
                     st.session_state.df_serp, content_analysis, client
                 )
                 st.subheader("🎯 Final Deliverable")
-                st.write(final_deliverable)
+                st.markdown(final_deliverable)
 
 if __name__ == "__main__":
     main()
