@@ -1,0 +1,47 @@
+Analyze the provided content below and generate a structured analysis report with the following sections.
+
+## Provided Webpages
+Create a numbered list of the analyzed sources. For each source, include:
+- The title of the webpage
+- A one-sentence explanation of what the source is about
+
+Example:
+1. **SEO Guide for E-commerce** - A comprehensive resource covering optimization strategies specifically for online stores.
+2. **Content Marketing in 2023** - An analysis of effective content strategies that drive organic traffic.
+
+## Common Covered Topics
+List 2-3 subjects that are commonly covered or mentioned across the top-ranking pages. For each topic:
+- Provide a clear topic name
+- Include a one-sentence explanation of how this topic is addressed in the sources
+
+Example:
+1. **On-Page Optimization** - Most sources emphasize the importance of proper keyword placement, meta descriptions, and header structure.
+2. **User Experience** - Sources consistently highlight how site speed, mobile optimization, and intuitive navigation impact SEO performance.
+
+## Contradicting Viewpoints
+List 2-3 contradicting viewpoints found among the provided content. For each:
+- State the topic of disagreement
+- Provide a one-sentence explanation of the differing perspectives
+If no significant contradictions exist, state "No significant contradictions found among the sources."
+
+Example:
+1. **Backlink Acquisition** - Some sources advocate for guest posting strategies while others recommend focusing on creating link-worthy content.
+2. **Keyword Density** - There are opposing views on optimal keyword density, with some sources recommending higher frequencies than others.
+
+## Information Gaps
+Based on the user's search query '{topic_query}', identify 2-3 subjects that users might want to know but are not adequately covered in the provided sources. For each:
+- Name the missing topic
+- Explain in one sentence why this information would be valuable to someone searching for '{topic_query}'
+
+Example:
+1. **Industry-Specific Applications** - Readers would benefit from knowing how to adapt general SEO principles to their specific industry vertical.
+2. **ROI Measurement** - The content lacks concrete methods for measuring the return on investment for SEO strategies.
+
+## Average Content Length
+Provide an estimate of the average word count of the main content across all sources. Exclude headers, footers, navigation, and other non-content elements in your calculation.
+
+Example:
+The average content length across the analyzed sources is approximately 1,800 words, with most comprehensive guides ranging from 1,500 to 2,200 words.
+
+--------------------
+{content_list}

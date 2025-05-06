@@ -1,0 +1,89 @@
+Develop a comprehensive content plan considering the content analysis provided below.
+
+Topic: 
+{topic_query}
+
+Target Keywords:
+{targeting_keywords}
+
+Content Analysis:
+{content_analysis}
+
+IMPORTANT: Your response MUST follow the EXACT structure below with all four sections.
+
+# Content Plan: {topic_query}
+
+## Objectives 
+Write a 150-200 word introduction about the purpose and goals of this content. Explain who the target audience is and what value they will get from this content. Keep this high-level and focused on the overall objectives.
+
+## Key Messages
+- Key Message 1: [First important point or takeaway for readers]
+- Key Message 2: [Second important point or takeaway for readers]
+- Key Message 3: [Optional third point if relevant]
+
+## Writer Notes
+- Recommended Length: [Provide word count range based on competitor analysis]
+- Target Audience: [Brief description of the primary audience]
+- Content Tone: [Specify appropriate tone - informational, conversational, etc.]
+- Primary Keywords: [List 3-5 most important keywords from the provided list, with search volume in parentheses]
+- Additional Considerations: [Any other important notes for the writer]
+
+## Outline
+Provide a clear, well-formatted hierarchical outline for the content using Markdown headings (###) and list items (A., 1.). Ensure consistent and proper indentation to clearly show the structure, making it easy to read and follow.
+
+### I. [Main Section Title]
+- [Subsection Title]
+    - [Key point or topic to cover]
+    - [Key point or topic to cover]
+- [Subsection Title]
+    - [Key point or topic to cover]
+    - [Key point or topic to cover]
+
+### II. [Main Section Title]
+- [Subsection Title]
+    - [Key point or topic to cover]
+    - [Key point or topic to cover]
+- [Subsection Title]
+    - [Key point or topic to cover]
+    - [Key point or topic to cover]
+
+[Continue with as many sections as needed, following the same hierarchical structure and indentation]
+
+EXAMPLE OUTPUT:
+
+# Content Plan: Home Office Ergonomics Best Practices
+
+## Objectives
+Creating an effective ergonomic home office setup has become essential for remote workers and freelancers who spend long hours at their desks. This content aims to provide practical guidance on setting up an ergonomic workspace that prevents physical strain, improves productivity, and enhances overall wellbeing. Our target audience includes remote professionals, home-based entrepreneurs, and anyone working from home who wants to create a healthier workspace. The content will focus on evidence-based recommendations that are affordable and implementable for the average home worker, addressing common pain points like back pain, eye strain, and poor posture that result from improper workspace configuration.
+
+## Key Messages
+- Proper ergonomics reduces the risk of repetitive strain injuries and long-term health issues while improving daily comfort and productivity
+- The ideal ergonomic setup includes adjustments to chair height, monitor position, keyboard placement, and lighting that can be achieved with minimal investment
+- Regular movement breaks and position changes are as important as equipment choices in maintaining physical wellbeing during work hours
+
+## Writer Notes
+- Recommended Length: 1500-1800 words based on competitor content analysis
+- Target Audience: Remote workers, home office users, digital professionals aged 25-45
+- Content Tone: Informational but approachable, with practical advice prioritized over technical jargon
+- Primary Keywords: home office ergonomics (2400), ergonomic desk setup (1800), prevent wrist pain computer (950), home office chair position (720), monitor height ergonomics (680)
+- Additional Considerations: Include affordable solutions and alternatives to expensive ergonomic equipment; add a downloadable checklist for readers
+
+## Outline
+### I. Introduction to Home Office Ergonomics
+- Definition and Importance
+    - What constitutes proper ergonomics
+    - Statistics on work-related injuries from poor setup
+- Common Home Office Ergonomic Challenges
+    - Limited space constraints
+    - Using non-optimal furniture
+    - Makeshift workspace issues
+
+### II. Essential Elements of an Ergonomic Home Workspace
+- Seating Solutions
+    - Proper chair height and positioning
+    - Lumbar support options
+    - Budget-friendly chair alternatives
+- Desk and Keyboard Setup
+    - Ideal desk height determination
+    - Keyboard and mouse positioning
+    - Wrist support considerations

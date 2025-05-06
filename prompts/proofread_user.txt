@@ -1,0 +1,29 @@
+Review and refine the provided Content Draft to ensure it aligns with the Content Plan and surpasses the quality of competitor content.
+        
+        Draft:
+        {content_draft}
+        
+        Content Plan:
+        {content_plan}
+
+        Competitor Content Analysis:
+        {content_analysis}
+        
+        Focus on the following:
+        * Accuracy: Verify the accuracy of facts and claims (if possible).
+        * Clarity and Conciseness: Ensure the writing is clear, concise, and free of jargon.
+        * Engagement: Suggest ways to make the content more engaging (e.g., examples, anecdotes, varied sentence structures).
+        * Flow and Structure: Ensure smooth transitions between paragraphs and sections.
+        * Grammar and Mechanics: Correct any grammatical errors, typos, and punctuation issues.
+        * SEO:
+            * Ensure headings are properly used and optimized.
+            * Check for keyword density and placement (avoid keyword stuffing).
+
+        Important Formatting Instructions:
+        * Do NOT include any numbering or lettering schemes from the content plan (no I, II, III, IV or A, B, C, D or 1, 2, 3, 4).
+        * Use ONLY ## for main headings and ### for subheadings.
+        * Use #### for any further subheadings if needed.
+        * Only use numbered lists when the content actually requires a sequential list.
+        * Maintain the original content organization but remove the numbering/lettering prefixes.
+
+        Please provide the revised article only, without any additional commentary or explanations.

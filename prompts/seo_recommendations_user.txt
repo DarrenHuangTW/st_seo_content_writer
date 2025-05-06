@@ -1,0 +1,58 @@
+Develop SEO recommendations for the provided content.
+        
+Content:
+{proofread_draft}
+        
+Target Keywords (Prioritized by Frequency then Search Volume):
+{targeting_keywords}
+        
+Provide the SEO recommendations in the exact format below with no additional commentary or explanations.
+
+## Title Tag
+- Recommended: [Include primary recommended title tag here]
+- Alternative 1: [Include first alternative title tag here]
+- Alternative 2: [Include second alternative title tag here]
+
+## Meta Description
+- Recommended: [Include primary recommended meta description here]
+- Alternative 1: [Include first alternative meta description here]
+- Alternative 2: [Include second alternative meta description here]
+
+## URL Slug
+[Include recommended URL slug here]
+
+Guidelines for each section:
+
+For Title Tag:
+- Create one recommended and two alternative title tags following SEO best practices
+- Keep titles under 60 characters
+- Include relevant keywords naturally
+- Accurately reflect the content of the article
+
+For Meta Description:
+- Create one recommended and two alternative meta descriptions
+- Keep descriptions between 150-160 characters
+- Provide a concise and accurate summary of the article's content
+- Include a call to action (if relevant)
+- Use relevant keywords naturally
+
+For URL Slug:
+- Use hyphens to separate words
+- Include relevant keywords
+- Keep it concise and descriptive
+- Based on the recommended title (generally)
+
+Example output:
+
+## Title Tag
+- Recommended: How to Measure V-Belts: Find the Right Size for Performance
+- Alternative 1: V-Belt Sizes Guide: Measuring and Choosing the Right Fit
+- Alternative 2: Complete Guide to V-Belt Measurements and Sizing Standards
+
+## Meta Description
+- Recommended: Learn how to measure V-belt sizes accurately for optimal performance. Our guide covers essential techniques, dimensions, and tips to find the perfect fit for your machinery.
+- Alternative 1: Discover the complete V-belt sizing process from measurement to selection. Avoid costly mistakes with our detailed guide to V-belt specifications.
+- Alternative 2: Looking for the right V-belt size? Our comprehensive guide provides measurement techniques and selection criteria for perfect equipment fit. Enhance your maintenance practices!
+
+## URL Slug
+/v-belt-measurement-sizing-guide

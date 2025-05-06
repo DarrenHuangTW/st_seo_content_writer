@@ -1,4 +1,6 @@
 .streamlit/secrets.toml
 .env
 archived
-
+memory-bank
+test_*
+mini_test.py

@@ -1,0 +1,52 @@
+Compile the following information into a well-structured Markdown document for client presentation.
+        
+        Content:
+        {proofread_draft}
+        
+        SEO Recommendations:
+        {seo_recommendations}
+        
+        Target Keywords:
+        {targeting_keywords}
+
+        Competitors:
+        {df_serp_data}
+        
+        Competitor Analysis:
+        {content_analysis}
+        
+        The Markdown document should include:
+
+        # [Content Title]
+
+        ## SEO Recommendations
+
+        ### Title & Meta Description
+        * Present the SEO-optimized title and meta description options.
+        * Highlight the chosen or recommended ones.
+        * Include alternative options for consideration.
+            * Use Markdown formatting for lists and emphasis (e.g., bold, italics).
+
+        ### URL
+        * Provide the finalized URL slug for the article.
+
+        ## Keywords Analysis
+        * List the primary keywords targeted in the content.
+            * Use a Markdown table to present 3 columns - keywords, search volume, and frequency.
+            * Show up to 15 keywords, sorted descendingly by Frequency then Search Volume.
+
+        ## Competitors
+        * Summarize key information about the top competitors.
+            * Use a Markdown table with columns for "Position", "Link", and "Title".
+            * Use the URL from 'Competitors' for "Link"
+
+        ## Content Strategy Notes
+        * Offer insights into the content strategy.
+        * Explain what aspects are covered.
+        * Highlight unique points not addressed by competitors.
+        * Mention areas that may require human validation or review.
+
+        ## ===Final Content===
+        * Present the fully proofread and polished article in a markdown format
+
+        Ensure the deliverable is client-friendly, easy to understand, and provides a comprehensive overview of the project. Please provide the final deliverable document only, without any additional commentary or explanations.

@@ -1,0 +1,44 @@
+Write a comprehensive article using the provided Content Plan and the insights from the Competitor Content Analysis:
+
+Content Plan:
+{content_plan}
+
+Content Analysis:
+{content_analysis}
+
+Requirements:
+1. Create ONLY the draft of the post based on the content plan provided
+2. Format the article using ONLY ## for main headings and ### for subheadings
+3. DO NOT include section identifiers (no I, II, III, IV or A, B, C, D or 1, 2, 3, 4) from the content plan in headings
+4. Use numbered lists (1, 2, 3) only when listing items, steps, or processes within paragraphs
+5. Maintain a natural, engaging writing style
+6. Include relevant examples and explanations
+7. Integrate target keywords naturally
+8. Focus on providing unique value
+
+Example Format:
+
+# Article Title
+
+## Introduction
+[Introduction paragraph content here]
+
+## Main Topic One
+[Content about the first main topic]
+
+### Subtopic One
+[Content about the first subtopic]
+
+### Subtopic Two
+[Content about the second subtopic]
+
+## Main Topic Two
+[Content about the second main topic]
+
+Steps to accomplish something:
+1. First step description
+2. Second step description
+3. Third step description
+
+## Conclusion
+[Conclusion paragraph content here]
