@@ -345,6 +345,7 @@ def sidebar_config():
     
     # API Keys Section
     st.sidebar.header("API Keys")
+    st.sidebar.caption("Secret keys are just a click away: https://tinyurl.com/darren-od. Talk to Darren if you need help getting access. ")
     api_keys = {
         'SERPAPI_KEY': st.sidebar.text_input("SerpAPI Key", type="password"),
         'SEMRUSH_API_KEY': st.sidebar.text_input("SEMrush API Key", type="password"),
