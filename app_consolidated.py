@@ -33,7 +33,7 @@ def get_serpapi_data(topic_query, SERPAPI_KEY):
     params = {
         "q": topic_query,
         "hl": "en",
-        "gl": "au",
+        "gl": config["semrush_database"],
         "google_domain": "google.com",
         "api_key": SERPAPI_KEY
     }
@@ -371,9 +371,9 @@ def sidebar_config():
     )
     
     # Database Selection
-    st.sidebar.header("SEMrush Settings")
+    st.sidebar.header("Country Selection")
     database = st.sidebar.selectbox(
-        "Select SEMrush Database",
+        "Select a country for SEMrush database and SERP retrieval)",
         options=["au", "us", "nz", "sg"],
         index=0
     )
