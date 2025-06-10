@@ -374,7 +374,7 @@ def sidebar_config():
     st.sidebar.header("Country Selection")
     database = st.sidebar.selectbox(
         "Select a country for SEMrush database and SERP retrieval)",
-        options=["au", "us", "nz", "sg"],
+        options=["au", "us", "nz", "sg", "uk"],
         index=0
     )
     
