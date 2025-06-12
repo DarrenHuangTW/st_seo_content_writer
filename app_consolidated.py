@@ -347,11 +347,11 @@ def sidebar_config():
     st.sidebar.header("API Keys")
     st.sidebar.caption("Secret keys are just a click away: https://tinyurl.com/darren-od. Talk to Darren if you need help getting access. ")
     api_keys = {
-        'SERPAPI_KEY': st.sidebar.text_input("SerpAPI Key", type="password"),
+        'SERPAPI_KEY': st.sidebar.text_input("SerpAPI Key", type="password", placeholder="Visit: https://serpapi.com/"),
         'SEMRUSH_API_KEY': st.sidebar.text_input("SEMrush API Key", type="password"),
-        'FIRECRAWL_API_KEY': st.sidebar.text_input("Firecrawl API Key", type="password"),
+        'FIRECRAWL_API_KEY': st.sidebar.text_input("Firecrawl API Key", type="password", placeholder="Visit: https://www.firecrawl.dev/"),
         'OPENAI_API_KEY': st.sidebar.text_input("OpenAI API Key", type="password"),
-        'ANTHROPIC_API_KEY': st.sidebar.text_input("Anthropic API Key", type="password"),
+        'ANTHROPIC_API_KEY': st.sidebar.text_input("Anthropic API Key", type="password", placeholder="optional"),
         # 'GOOGLE_API_KEY': st.sidebar.text_input("Google API Key", type="password")
     }
     
@@ -407,7 +407,7 @@ def main():
 
     
     # Step 1: Topic Selection
-    topic_query = st.text_input("Enter the topic you want to write about:")
+    topic_query = st.text_input("Enter the topic you want to write about:", placeholder="e.g. how to plan a bathroom renovation?")
     
     if topic_query:
         # Initialize session state for storing data
